@@ -1,0 +1,77 @@
+Seed 7052020:
+Epoch 0: valid accuracy = 0.5980230642504119
+Epoch 1: valid accuracy = 0.7528830313014827
+Epoch 2: valid accuracy = 0.7721032399780341
+Epoch 3: valid accuracy = 0.7528830313014827
+Epoch 4: valid accuracy = 0.7160900604063701
+Avg_loss:  0.6243173831275531
+f1: 0.7564469914040114
+Confusion matrix:
+ [[221 223]
+ [ 32 396]]
+Test accuracy = 0.7075688073394495
+
+------------------------------------
+
+lr=1e-4, batch_size=32, epoch=5
+
+Seed 1:
+Epoch 0: valid accuracy = 0.6144975288303131
+Epoch 1: valid accuracy = 0.7616694124107634
+Epoch 2: valid accuracy = 0.7869302580999451
+Epoch 3: valid accuracy = 0.7759472817133443
+Epoch 4: valid accuracy = 0.7693574958813838
+Avg_loss:  0.5035396186368806
+f1: 0.7736450584484591
+Confusion matrix:
+ [[295 149]
+ [ 64 364]]
+Test accuracy = 0.7557339449541285
+Seed 2:
+Epoch 0: valid accuracy = 0.6644700713893466
+Epoch 1: valid accuracy = 0.7649643053267435
+Epoch 2: valid accuracy = 0.7633168588687534
+Epoch 3: valid accuracy = 0.7726523887973641
+Epoch 4: valid accuracy = 0.7660626029654036
+Avg_loss:  0.5066177014793668
+f1: 0.7728237791932059
+Confusion matrix:
+ [[294 150]
+ [ 64 364]]
+Test accuracy = 0.7545871559633027
+Seed 3:
+Epoch 0: valid accuracy = 0.6771004942339374
+Epoch 1: valid accuracy = 0.756727073036793
+Epoch 2: valid accuracy = 0.771004942339374
+Epoch 3: valid accuracy = 0.7759472817133443
+Epoch 4: valid accuracy = 0.7721032399780341
+Avg_loss:  0.4973492409501757
+f1: 0.7650397275822929
+Confusion matrix:
+ [[328 116]
+ [ 91 337]]
+Test accuracy = 0.7626146788990825
+Seed 4:
+Epoch 0: valid accuracy = 0.6694124107633168
+Epoch 1: valid accuracy = 0.7583745194947831
+Epoch 2: valid accuracy = 0.7375068643602416
+Epoch 3: valid accuracy = 0.7589236683141132
+Epoch 4: valid accuracy = 0.7534321801208127
+Avg_loss:  0.530286157237632
+f1: 0.7706611570247934
+Confusion matrix:
+ [[277 167]
+ [ 55 373]]
+Test accuracy = 0.7454128440366973
+Seed 5:
+Epoch 0: valid accuracy = 0.6337177375068643
+Epoch 1: valid accuracy = 0.7649643053267435
+Epoch 2: valid accuracy = 0.785282811641955
+Epoch 3: valid accuracy = 0.7825370675453048
+Epoch 4: valid accuracy = 0.7759472817133443
+Avg_loss:  0.49544559844902586
+f1: 0.7646408839779005
+Confusion matrix:
+ [[313 131]
+ [ 82 346]]
+Test accuracy = 0.7557339449541285

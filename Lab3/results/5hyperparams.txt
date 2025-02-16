@@ -1,0 +1,201 @@
+BEST MODEL
+
+GRU
+hidden size = 150
+num layers=2
+dropout=0.5
+bidir= True
+
+
+chose 5:
+
+Learning rate
+Optimizer (try out something other than Adam)
+Vocabulary size V
+Gradient clipping value
+Freezing vector representation (freeze argument in the from_pretrained method)
+
+---------------------------------------------------
+
+attention
+Seed 7052020:
+Epoch 0: valid accuracy = 0.7682591982427238
+Epoch 1: valid accuracy = 0.7803404722679846
+Epoch 2: valid accuracy = 0.785831960461285
+Epoch 3: valid accuracy = 0.7775947281713345
+Epoch 4: valid accuracy = 0.7825370675453048
+Avg_loss:  0.4854132868349552
+f1: 0.7824267782426778
+Confusion matrix:
+ [[290 154]
+ [ 54 374]]
+Test accuracy = 0.7614678899082569
+
+------------------------------------
+
+
+LR + attention = same results
+
+lr: 0.005
+Seed 7052020:
+Epoch 0: valid accuracy = 0.7748489840746843
+Epoch 1: valid accuracy = 0.7638660076880834
+Epoch 2: valid accuracy = 0.7732015376166941
+Epoch 3: valid accuracy = 0.7578253706754531
+Epoch 4: valid accuracy = 0.7633168588687534
+Avg_loss:  0.5138460940548352
+f1: 0.7748478701825559
+Confusion matrix:
+ [[268 176]
+ [ 46 382]]
+Test accuracy = 0.7454128440366973
+lr: 0.0002
+Seed 7052020:
+Epoch 0: valid accuracy = 0.7748489840746843
+Epoch 1: valid accuracy = 0.7638660076880834
+Epoch 2: valid accuracy = 0.7732015376166941
+Epoch 3: valid accuracy = 0.7578253706754531
+Epoch 4: valid accuracy = 0.7633168588687534
+Avg_loss:  0.5138460940548352
+f1: 0.7748478701825559
+Confusion matrix:
+ [[268 176]
+ [ 46 382]]
+Test accuracy = 0.7454128440366973
+lr: 0.0005
+Seed 7052020:
+Epoch 0: valid accuracy = 0.7748489840746843
+Epoch 1: valid accuracy = 0.7638660076880834
+Epoch 2: valid accuracy = 0.7732015376166941
+Epoch 3: valid accuracy = 0.7578253706754531
+Epoch 4: valid accuracy = 0.7633168588687534
+Avg_loss:  0.5138460940548352
+f1: 0.7748478701825559
+Confusion matrix:
+ [[268 176]
+ [ 46 382]]
+Test accuracy = 0.7454128440366973
+-----------------------------------
+
+Optimizer = better = rmsprop
+
+optimizer: sgd
+Seed 7052020:
+Epoch 0: valid accuracy = 0.5068643602416255
+Epoch 1: valid accuracy = 0.5030203185063152
+Epoch 2: valid accuracy = 0.49917627677100496
+Epoch 3: valid accuracy = 0.499725425590335
+Epoch 4: valid accuracy = 0.49807797913234486
+Avg_loss:  0.6937594435044697
+f1: 0.0
+Confusion matrix:
+ [[443   1]
+ [428   0]]
+Test accuracy = 0.5080275229357798
+optimizer: rmsprop
+Seed 7052020:
+Epoch 0: valid accuracy = 0.7451949478308622
+Epoch 1: valid accuracy = 0.7473915431081823
+Epoch 2: valid accuracy = 0.7638660076880834
+Epoch 3: valid accuracy = 0.7413509060955519
+Epoch 4: valid accuracy = 0.7539813289401428
+Avg_loss:  0.5545602834650448
+f1: 0.7012278308321964
+Confusion matrix:
+ [[396  48]
+ [171 257]]
+Test accuracy = 0.7488532110091743
+optimizer: adagrad
+Seed 7052020:
+Epoch 0: valid accuracy = 0.49917627677100496
+Epoch 1: valid accuracy = 0.500274574409665
+Epoch 2: valid accuracy = 0.5085118066996156
+Epoch 3: valid accuracy = 0.527732015376167
+Epoch 4: valid accuracy = 0.5606809445359693
+Avg_loss:  0.6828055254050663
+f1: 0.2878787878787879
+Confusion matrix:
+ [[420  24]
+ [352  76]]
+Test accuracy = 0.5688073394495413
+
+---------------------------------------------
+
+Freeze param False
+ 
+Seed 7052020:
+Epoch 0: valid accuracy = 0.5936298736957716
+Epoch 1: valid accuracy = 0.6507413509060955
+Epoch 2: valid accuracy = 0.6699615595826469
+Epoch 3: valid accuracy = 0.6820428336079077
+Epoch 4: valid accuracy = 0.7056562328390994
+Avg_loss:  0.5593716608626502
+f1: 0.7204678362573099
+Confusion matrix:
+ [[325 119]
+ [120 308]]
+Test accuracy = 0.7259174311926605
+
+--------------------------------------
+
+gradient clipping value = 0.5
+Seed 7052020:
+Epoch 0: valid accuracy = 0.7045579352004393
+Epoch 1: valid accuracy = 0.7413509060955519
+Epoch 2: valid accuracy = 0.7440966501922021
+Epoch 3: valid accuracy = 0.6677649643053267
+Epoch 4: valid accuracy = 0.7073036792970895
+Avg_loss:  0.6887676665293319
+f1: 0.6132930513595166
+Confusion matrix:
+ [[413  31]
+ [225 203]]
+Test accuracy = 0.7064220183486238
+
+gradient clipping value = 0.1
+
+Seed 7052020:
+Epoch 0: valid accuracy = 0.7259747391543108
+Epoch 1: valid accuracy = 0.7479406919275123
+Epoch 2: valid accuracy = 0.7484898407468424
+Epoch 3: valid accuracy = 0.6694124107633168
+Epoch 4: valid accuracy = 0.7012630422844591
+Avg_loss:  0.6931887806526252
+f1: 0.6135338345864662
+Confusion matrix:
+ [[411  33]
+ [224 204]]
+Test accuracy = 0.7052752293577982
+
+
+--------------------------------
+
+full vocab
+Epoch 0: valid accuracy = 0.7188358045030203
+Epoch 1: valid accuracy = 0.7391543108182317
+Epoch 2: valid accuracy = 0.7375068643602416
+Epoch 3: valid accuracy = 0.7644151565074135
+Epoch 4: valid accuracy = 0.7924217462932455
+Avg_loss:  0.47674208506941795
+f1: 0.7800729040097206
+Confusion matrix:
+ [[370  74]
+ [107 321]]
+Test accuracy = 0.7924311926605505
+
+---------------
+
+Vocab size = 12k 
+
+Seed 7052020:
+Epoch 0: valid accuracy = 0.629873695771554
+Epoch 1: valid accuracy = 0.6408566721581549
+Epoch 2: valid accuracy = 0.6348160351455244
+Epoch 3: valid accuracy = 0.6441515650741351
+Epoch 4: valid accuracy = 0.6622734761120264
+Avg_loss:  0.8824315736336368
+f1: 0.7002749770852429
+Confusion matrix:
+ [[163 281]
+ [ 46 382]]
+Test accuracy = 0.625

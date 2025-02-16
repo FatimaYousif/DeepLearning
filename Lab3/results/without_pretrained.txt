@@ -1,0 +1,34 @@
+Baseline model
+
+from 70.7% to 68%
+
+Seed 7052020:
+Epoch 0: valid accuracy = 0.4986271279516749
+Epoch 1: valid accuracy = 0.5892366831411312
+Epoch 2: valid accuracy = 0.6293245469522241
+Epoch 3: valid accuracy = 0.6540362438220758
+Epoch 4: valid accuracy = 0.6754530477759473
+Avg_loss:  0.5961358164037976
+f1: 0.6490566037735849
+Confusion matrix:
+ [[335 109]
+ [170 258]]
+Test accuracy = 0.680045871559633
+
+---------------------------------
+
+Best model - GRU
+from 79.2% to 72.5%  = CONSIDERABLY MORE AFFECTED
+
+Seed 7052020:
+Epoch 0: valid accuracy = 0.5936298736957716
+Epoch 1: valid accuracy = 0.6507413509060955
+Epoch 2: valid accuracy = 0.6699615595826469
+Epoch 3: valid accuracy = 0.6820428336079077
+Epoch 4: valid accuracy = 0.7056562328390994
+Avg_loss:  0.5593716608626502
+f1: 0.7204678362573099
+Confusion matrix:
+ [[325 119]
+ [120 308]]
+Test accuracy = 0.7259174311926605
