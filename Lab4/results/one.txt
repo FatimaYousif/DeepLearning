@@ -1,0 +1,56 @@
+= Using device cuda
+> Loaded 60000 training images!
+> Loaded 10000 validation images!
+Epoch: 0
+Iter: 0, Mean Loss: 0.778
+Iter: 100, Mean Loss: 0.232
+Iter: 200, Mean Loss: 0.160
+Iter: 300, Mean Loss: 0.127
+Iter: 400, Mean Loss: 0.108
+Iter: 500, Mean Loss: 0.095
+Iter: 600, Mean Loss: 0.086
+Iter: 700, Mean Loss: 0.079
+Iter: 800, Mean Loss: 0.073
+Iter: 900, Mean Loss: 0.068
+Mean Loss in Epoch 0: 0.067
+Computing mean representations for evaluation...
+Evaluating on test set...
+Epoch 0: Test Accuracy: 97.58%
+Epoch time (sec): 77.3
+Epoch: 1
+Iter: 0, Mean Loss: 0.016
+Iter: 100, Mean Loss: 0.020
+Iter: 200, Mean Loss: 0.024
+Iter: 300, Mean Loss: 0.024
+Iter: 400, Mean Loss: 0.024
+Iter: 500, Mean Loss: 0.024
+Iter: 600, Mean Loss: 0.024
+Iter: 700, Mean Loss: 0.024
+Iter: 800, Mean Loss: 0.023
+Iter: 900, Mean Loss: 0.022
+Mean Loss in Epoch 1: 0.022
+Computing mean representations for evaluation...
+Evaluating on test set...
+Epoch 1: Test Accuracy: 98.10%
+Epoch time (sec): 69.8
+Epoch: 2
+Iter: 0, Mean Loss: 0.039
+Iter: 100, Mean Loss: 0.018
+Iter: 200, Mean Loss: 0.019
+Iter: 300, Mean Loss: 0.021
+Iter: 400, Mean Loss: 0.020
+Iter: 500, Mean Loss: 0.021
+Iter: 600, Mean Loss: 0.021
+Iter: 700, Mean Loss: 0.020
+Iter: 800, Mean Loss: 0.020
+Iter: 900, Mean Loss: 0.019
+Mean Loss in Epoch 2: 0.019
+Computing mean representations for evaluation...
+Evaluating on test set...
+Epoch 2: Test Accuracy: 98.37%
+Epoch time (sec): 78.8
+
+Evaluating on valid set model...
+Valid Top1 Acc: 98.31%
+Evaluating on valid set Identity model...
+Valid Top1 Acc: 81.36%
